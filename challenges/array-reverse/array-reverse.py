@@ -4,6 +4,6 @@ result = []
 def reverse(list):
   for i in range(len(list)):
     result.insert(0, list.pop(0))
-  print(result)
+  return(result)
 
-reverse(user_array)
+print(reverse(user_array))
