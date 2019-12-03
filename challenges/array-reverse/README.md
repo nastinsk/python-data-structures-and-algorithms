@@ -18,6 +18,6 @@ In solution to this challenge we used array methods pop() and insert().
 We used one for_loop in our solution wich describes our algorithm as O(N).
 
 
-##Solution
+## Solution
 [Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/array-reverse.jpg)
 
