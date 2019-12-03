@@ -17,3 +17,4 @@ In our solution we created function wich takes to arguments(list and element to 
 ## Solution
 [Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/array-shift.jpg)
 
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/array_shift/challenges/array_shift/array_shift.py)
