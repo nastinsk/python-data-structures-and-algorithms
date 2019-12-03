@@ -11,7 +11,7 @@ Write a function called insert_Shift_Array which takes in an array and the value
 
 
 ## Approach & Efficiency
-
+In our solution we created function wich takes to arguments(list and element to be inserted in the middle), then we find middle of the list using '//' operator, than we used '%' operator to check if list have odd or even number of elements, and then depends on the condition we add the new element to the middle of original array using properties of list indexes.
 
 
 ## Solution
