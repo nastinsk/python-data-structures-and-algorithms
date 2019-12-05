@@ -29,4 +29,4 @@ Big O(log N)
 ## Solution
 ![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/array-binary-search.jpg)
 
-[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/array_shift/challenges/master/array_binary_search.py)
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/array_binary_search/array_binary_search.py)
