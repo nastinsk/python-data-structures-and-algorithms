@@ -13,6 +13,15 @@ Write a function called binary_search which takes in 2 parameters: a sorted arra
 
 ## Approach & Efficiency
 In our solution we created function wich takes two arguments(ordered list and search key element).
+Create low var equal to 0, create high var equal to len(arr)
+Set While loop which will rub on;y if len(arr)> 0
+Set middle var to product of (low+high)//2
+compare middle value with key value and either:
+    - return value if equal
+    -adjust high or low values
+    - return -1 if key doesn't exist in arr
+return -1 if lenght of arr is 0
+
 
 Big O(log N)
 
