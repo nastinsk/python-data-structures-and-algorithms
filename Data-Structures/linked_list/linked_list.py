@@ -1,4 +1,8 @@
 # class Node:
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
 
 class LinkedList:
     def __init__(self):
@@ -18,13 +22,11 @@ class LinkedList:
             if current.value == value:
                 return True
             else:
-                current = current.value
+                current = current.next
         return False
 
+   
 
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+
 
 
