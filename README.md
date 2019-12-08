@@ -9,3 +9,7 @@ ________________________________________________________________
 * [Insert Shift Array](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/array_shift/challenges/array_shift)
 
 * [Binary Search](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/array_binary_search)
+
+
+## Data Structures
+* [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)

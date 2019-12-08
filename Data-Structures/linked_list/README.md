@@ -16,9 +16,9 @@ for the includes() function big O(N) because I used a while loop to iterate over
 for the __str__() it is also big O(N) because I also used a while loop in my solution to iterate over the list
 
 ## API
-insert() - takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
-includes() - takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
-__str__ - takes in no arguments and returns a string representing all the values in the Linked List
+* insert() - takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+* includes() - takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+* __str__ - takes in no arguments and returns a string representing all the values in the Linked List
 
 ## Credits
 Thanks to Ethan Davis for helping me during this code challenge
