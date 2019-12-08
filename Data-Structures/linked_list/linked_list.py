@@ -25,7 +25,14 @@ class LinkedList:
                 current = current.next
         return False
 
-   
+    def __str__(self):
+        list_str = ''
+        current = self.head
+        while current:
+            list_str += str(current.value ) + ', '
+            current = current.next
+        return list_str[:-2]
+
 
 
 
