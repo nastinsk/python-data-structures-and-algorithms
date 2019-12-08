@@ -43,6 +43,12 @@ def test_num_not_in_left():
   actual = binary_search([11,22,33,44,55,66,77,89,100], 10)
   assert actual == expected
 
+
+# def test_num_not_in_middle():
+#   expected = -1
+#   actual = binary_search([11,22,33,44,55,66,77,89,100], 56)
+#   assert actual == expected
+
 # Edge Cases
 def test_two_element_arr():
   expected = 1
