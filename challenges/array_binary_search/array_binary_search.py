@@ -13,3 +13,20 @@ def binary_search(arr, key):
       return -1
   return -1
 
+
+# def binary_search(arr, key):
+#     while len(arr) > 0:
+#         try:
+#             middle = len(arr)//2
+
+#             if arr[middle] == key:
+#                 return middle
+#             if arr[middle] > key:
+#                 binary_search( arr[:middle], key)
+#             if arr[middle] < key:
+#                 binary_search(arr[middle:], key)
+#         except IndexError:
+#             return -1
+
+#     return -1
+

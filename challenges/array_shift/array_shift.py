@@ -5,3 +5,4 @@ def insert_shift_array(l,b):
     return l[:middle] + [b] + l[middle:]
   else:
     return l[:middle + 1] + [b] + l[middle +1:]
+
