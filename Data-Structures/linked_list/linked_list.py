@@ -25,6 +25,15 @@ class LinkedList:
                 current = current.next
         return False
 
+    def append(self, value):
+        current = self.head
+        while current:
+            if current.next == None:
+                current.next = Node(value)
+                return self.__str__()
+            else:
+                current = current.next
+
     def __str__(self):
         list_str = ''
         current = self.head
