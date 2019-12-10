@@ -44,6 +44,12 @@ for the .insert_after(value, new_val) it is big O() because
 * .insert_before(value, new_val) - adds a new node with the given 'newValue' immediately before the first 'value' node
 * .insert_after(value, new_val) - adds a new node with the given 'newValue' immediately after the first 'value' node.
 
+## Solution
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/linked-list.jpg)
+
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/linked_list/linked_list.py)
+
+
 
 
 
