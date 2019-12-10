@@ -47,7 +47,7 @@ for the .insert_after(value, new_val) it is big O() because
 ## Solution
 ![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/linked-list.jpg)
 
-[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/linked_list/linked_list.py)
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/Data-Structures/linked_list/linked_list.py)
 
 
 
