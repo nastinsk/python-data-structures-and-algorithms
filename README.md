@@ -6,7 +6,7 @@
 ________________________________________________________________
 * [Reverse an Array](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/array-reverse/)
 
-* [Insert Shift Array](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/array_shift/challenges/array_shift)
+* [Insert Shift Array](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/array_shift)
 
 * [Binary Search](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/array_binary_search)
 
