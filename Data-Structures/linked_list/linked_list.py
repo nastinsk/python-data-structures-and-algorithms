@@ -1,22 +1,33 @@
 # class Node:
 class Node:
+    """ Class for the Node instances"""
+
     def __init__(self, value):
         self.value = value
         self.next = None
 
 class LinkedList:
+    """ Class for the LInkedLists instances"""
+
     def __init__(self):
+        """method to iniate a LinkedList"""
+
         self.head = None
 
     def __repr__(self):
+        """method to represent that LinkedList created"""
+
         return "LinkedList created"
 
     def insert(self, value):
+        """method to insert new node to the beginnig of the list"""
+
         node = Node(value)
         node.next = self.head
         self.head = node
 
     def includes(self, value):
+        """method to check if the given value in the liked list"""
         current = self.head
         while current:
             if current.value == value:
@@ -26,6 +37,8 @@ class LinkedList:
         return False
 
     def __str__(self):
+        """method that returns a string that represents all list elements"""
+
         list_str = ''
         current = self.head
         while current:
@@ -35,6 +48,8 @@ class LinkedList:
         return list_str[:-2]
 
     def append(self, value):
+        """method to append new node to the end of the list"""
+
         current = self.head
         while current:
 
@@ -49,6 +64,8 @@ class LinkedList:
         return self.__str__()
 
     def insert_before(self, value, new_value):
+        """method to insert new element before the given element of the list"""
+
         if self.includes(value):
             current = self.head
             previous = current
@@ -64,6 +81,8 @@ class LinkedList:
             return 'Value is not in the list'
 
     def insert_after(self, value, new_value):
+        """method to insert new element after the given element of the list"""
+
         if self.includes(value):
             current = self.head
             while current:

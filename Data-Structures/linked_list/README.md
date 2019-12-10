@@ -21,7 +21,6 @@ for the __str__() it is also big O(N) because I also used a while loop in my sol
 * .__str__ - takes in no arguments and returns a string representing all the values in the Linked List
 
 
-
 ## Credits
 Thanks to Ethan Davis for helping me during code challenge 05
 
@@ -33,17 +32,17 @@ Addin new insertion methods to the LinkedList class.
 ## Author: Anastasia Lebedeva, James Bond
 
 ## Challenge
-
+Add three new methods to the LinkedList instance that will add new element to the list in different positions.
 
 ## Approach & Efficiency
 for the .append(value) function big O() because
-for the .insertBefore(value, newVal) function big O() because
-for the .insertAfter(value, newVal) it is big O() because 
+for the .insert_before(value, new_val) function big O() because
+for the .insert_after(value, new_val) it is big O() because
 
 ## API
 * .append(value) - adds a new node with the given value to the end of the list
-* .insertBefore(value, newVal) - adds a new node with the given 'newValue' immediately before the first 'value' node
-* .insertAfter(value, newVal) - adds a new node with the given 'newValue' immediately after the first 'value' node.
+* .insert_before(value, new_val) - adds a new node with the given 'newValue' immediately before the first 'value' node
+* .insert_after(value, new_val) - adds a new node with the given 'newValue' immediately after the first 'value' node.
 
 
 

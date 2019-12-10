@@ -36,3 +36,16 @@ def test_insert_after_value_not_in_list():
 def test_insert_after_to_empty_list():
     linked_list = LinkedList()
     assert 'Value is not in the list' == linked_list.insert_before('e', 3)
+
+def test_append_2():
+    assert "d, 4, b, 3, cat, a, z, z2" == linked_list.append('z2')
+    assert "d, 4, b, 3, cat, a, z, z2, e2" == linked_list.append('e2')
+
+def test_insert_before_node_in_the_middle():
+    assert "d, 4, b, 3, 123, cat, a, z, z2, e2" == linked_list.insert_before('cat', 123)
+
+def test_insert_after_the_middle():
+    assert "d, 4, b, 3, 123, cat, dog, a, z, z2, e2" == linked_list.insert_after('cat', 'dog')
+
+def test_insert_after_the_last():
+    assert "d, 4, b, 3, 123, cat, dog, a, z, z2, e2, 1000" == linked_list.insert_after('e2', '1000')
