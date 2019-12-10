@@ -25,6 +25,7 @@ for the __str__() it is also big O(N) because I also used a while loop in my sol
 Thanks to Ethan Davis for helping me during code challenge 05
 
 
+
 # Linked list insertions
 
 Addin new insertion methods to the LinkedList class.
@@ -35,9 +36,9 @@ Addin new insertion methods to the LinkedList class.
 Add three new methods to the LinkedList instance that will add new element to the list in different positions.
 
 ## Approach & Efficiency
-for the .append(value) function big O() because
-for the .insert_before(value, new_val) function big O() because
-for the .insert_after(value, new_val) it is big O() because
+for the .append(value) function time big O(n) space O(1)
+for the .insert_before(value, new_val) function time big O(n) space O(1)
+for the .insert_after(value, new_val) function time big O(n) space O(1)
 
 ## API
 * .append(value) - adds a new node with the given value to the end of the list
@@ -46,6 +47,34 @@ for the .insert_after(value, new_val) it is big O() because
 
 ## Solution
 ![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/linked-list.jpg)
+
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/Data-Structures/linked_list/linked_list.py)
+
+
+
+
+# k-th value from the end of a linked list.
+
+Addin new methods that returns the k element from the end of the linked list.
+
+## Author: Anastasia Lebedeva, Ethan Davis
+
+## Challenge
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
+
+## Approach & Efficiency
+for the .length_() function time big O(n) space big O(1)
+for the .kth_from_end() function time big O(n) space big O(1)
+
+
+## API
+* .length_(self) - method to find the lenght of the linked list
+* .kth_from_end(self, k) - method to find k-th value from the end of the linked list.
+In our implementation K can be positive or negative and list can be empty
+
+
+## Solution
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/k-th-value.jpg)
 
 [Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/Data-Structures/linked_list/linked_list.py)
 
