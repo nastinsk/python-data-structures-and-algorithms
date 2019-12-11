@@ -95,3 +95,38 @@ class LinkedList:
         else:
             return 'Value is not in the list'
 
+    def length_(self):
+        """method to get lenght of the list"""
+
+        length = 0
+        current = self.head
+        while current:
+            length+=1
+            current = current.next
+        return length
+
+    def kth_from_end(self, k):
+        """method to find k-th value from the end of the linked list.
+        In our implementation K can be positive or negative and list can be empty"""
+
+        length = self.length_()
+
+        if not -length <= k < length:
+            raise Exception("k not in the range")
+
+        step_count = None
+
+        if k >= 0:
+            step_count = length - k -1
+        if k < 0:
+            step_count = abs(k)-1
+
+        current = self.head
+        for i in range(step_count):
+            current = current.next
+        return current.value
+
+if __name__ == "__main__":
+
+    linked_list = LinkedList()
+    linked_list.kth_from_end(5)
