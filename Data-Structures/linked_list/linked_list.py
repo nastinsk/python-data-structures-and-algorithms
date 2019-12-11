@@ -112,7 +112,7 @@ class LinkedList:
         length = self.length_()
 
         if not -length <= k < length:
-            return Exception("k not in the range")
+            raise Exception("k not in the range")
 
         step_count = None
 
@@ -126,3 +126,7 @@ class LinkedList:
             current = current.next
         return current.value
 
+if __name__ == "__main__":
+
+    linked_list = LinkedList()
+    linked_list.kth_from_end(5)

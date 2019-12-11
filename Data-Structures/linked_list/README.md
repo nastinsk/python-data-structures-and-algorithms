@@ -74,7 +74,7 @@ In our implementation K can be positive or negative and list can be empty
 
 
 ## Solution
-![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/k-th-value.jpg)
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/kth-from-end.jpg)
 
 [Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/Data-Structures/linked_list/linked_list.py)
 
