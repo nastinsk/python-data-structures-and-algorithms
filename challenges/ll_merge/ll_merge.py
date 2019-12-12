@@ -33,19 +33,8 @@ class LinkedList:
         return list_str[:-2]
 
 
-    def length_(self):
-        """method to get lenght of the list"""
 
-        length = 0
-        current = self.head
-        while current:
-            length+=1
-            current = current.next
-        return length
-
-
-
-def merge_list2(list1, list2):
+def merge_list(list1, list2):
     """
     Merge_lists function which takes two linked lists as arguments. Zips them together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
     """
@@ -92,7 +81,7 @@ if __name__ == "__main__":
 
     l_list1 = create_list(['d', 'c', 'b', 'a'])
     l_list2 = create_list(['h','g','f','e', 'z'])
-    ref_to_head = merge_list2(l_list1, l_list2)
+    ref_to_head = merge_list(l_list1, l_list2)
     print(ref_to_head.value)
 
 
