@@ -10,6 +10,7 @@ ________________________________________________________________
 
 * [Binary Search](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/array_binary_search)
 
+* [Merged Linked Lists](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/ll_merge)
 
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
