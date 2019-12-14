@@ -101,3 +101,18 @@ def test_queue_peek():
     test_queue.dequeue()
     test_queue.dequeue()
     assert test_queue.peek() == "Queue is empty"
+
+def test_queue_is_empty():
+    test_queue = create_queue(['a', 'b', 'c', 'd'])
+    assert test_queue.is_empty() == False
+    test_queue = Stack()
+    assert test_queue.is_empty() == True
+
+def test_queue_one_el():
+
+    test_queue = create_queue([1])
+
+    assert test_queue.is_empty() == False
+    assert test_queue.rear.value == 1
+    assert test_queue.front.value == 1
+
