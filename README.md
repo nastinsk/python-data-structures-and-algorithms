@@ -14,3 +14,5 @@ ________________________________________________________________
 
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
+
+* [Stacks and Queues](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/stacks_and_queues)
