@@ -33,7 +33,7 @@ class Stack:
             temp.next = None
             return temp.value
         else:
-            return "Stack is empty"
+            return None
 
     def peek(self):
         """Method that returns the value of the node located on top of the stack, without removing it from the stack."""
@@ -41,7 +41,7 @@ class Stack:
         if not self.is_empty():
             return self.top.value
         else:
-            return "Stack is empty"
+            return None
 
 
 class Queue:
@@ -82,14 +82,14 @@ class Queue:
             temp.next = None
             return temp.value
         else:
-            return "Queueu is empty"
+            return None
 
     def peek(self):
         """Method that returns the value of the node located in the front of the queue, without removing it from the queue."""
 
         if not self.is_empty():
             return self.front.value
-        return "Queue is empty"
+        return None
 
 
 

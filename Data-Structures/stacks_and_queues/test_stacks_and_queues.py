@@ -37,7 +37,7 @@ def test_stack_pop():
     test_stack.pop()
     test_stack.pop()
     test_stack.pop()
-    assert test_stack.peek() == "Stack is empty"
+    assert test_stack.peek() == None
 
 def test_stack_peek():
     test_stack = create_stack(['a', 'b', 'c', 'd'])
@@ -48,7 +48,7 @@ def test_stack_peek():
     test_stack.pop()
     test_stack.pop()
     test_stack.pop()
-    assert test_stack.peek() == "Stack is empty"
+    assert test_stack.peek() == None
 
 def test_stack_is_empty():
     test_stack = create_stack(['a', 'b', 'c', 'd'])
@@ -90,7 +90,7 @@ def test_queue_dequeue():
     test_queue.dequeue()
     test_queue.dequeue()
     test_queue.dequeue()
-    assert test_queue.peek() == "Queue is empty"
+    assert test_queue.peek() == None
 
 def test_queue_peek():
     test_queue = create_queue(['a', 'b', 'c', 'd'])
@@ -100,7 +100,7 @@ def test_queue_peek():
     test_queue.dequeue()
     test_queue.dequeue()
     test_queue.dequeue()
-    assert test_queue.peek() == "Queue is empty"
+    assert test_queue.peek() == None
 
 def test_queue_is_empty():
     test_queue = create_queue(['a', 'b', 'c', 'd'])
@@ -115,4 +115,5 @@ def test_queue_one_el():
     assert test_queue.is_empty() == False
     assert test_queue.rear.value == 1
     assert test_queue.front.value == 1
+
 
