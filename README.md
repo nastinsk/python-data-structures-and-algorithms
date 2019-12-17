@@ -12,7 +12,7 @@ ________________________________________________________________
 
 * [Merged Linked Lists](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/ll_merge)
 
-* [Merged Linked Lists](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/queue_with_stacks)
+* [Queue With Stacks](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/queue_with_stacks)
 
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
