@@ -18,25 +18,14 @@ Internal state after: </br>
 [dog3]->[cat2]->[dog1]->[cat1] </br>
 
 
-**dequeue()** </br>
-Input: </br>
-[]->[10]->[15]->[20] </br>
 
-Output: </br>
-20 </br>
-
-Internal State: </br>
-[5]->[10]->[15]) </br>
 
 
 
 ## Approach & Efficiency
-* __init__(self, stack1) - initialization of the PseudoQueue class with the 1 given Stack and 1 empty Stack
-* enqueue(value) - Method to inserts value into the PseudoQueue, using a first-in, first-out approach.
-* dequeue() - Method to extract a value from the PseudoQueue, using a first-in, first-out approach. Returns value of extracted node
 
 
 ## Solution
-![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/queue-with-stacks.jpg)
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/fifo-animal-shelter.jpg)
 
-[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/queue_with_stacks/queue_with_stacks.py)
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/fifo_animal_shelter/fifo_animal_shelter.py)

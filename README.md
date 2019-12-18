@@ -14,6 +14,8 @@ ________________________________________________________________
 
 * [Queue With Stacks](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/queue_with_stacks)
 
+* [FIFO Animal Shelter](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/fifo_animal_shelter)
+
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
 
