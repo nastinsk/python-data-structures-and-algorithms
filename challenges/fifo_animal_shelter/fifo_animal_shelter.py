@@ -1,3 +1,5 @@
+import copy
+
 class Node:
     """ Class for the Node instances"""
     def __init__(self, value):
@@ -68,30 +70,50 @@ class AnimalShelter:
         self.queue1 = Queue()
         self.queue2 = Queue()
 
-    def enqueue(self, pet):
-        self.queue1.enqueue(pet)
+    def enqueue(self, animal):
+        self.queue1.enqueue(animal)
 
     def dequeue(self, pref):
         adopted_animal = None
-        while self.queue1.front:
-            moved_animal = self.queue1.front
-            moved_animal.next = None
-            if moved_animal.type == pref:
-                adopted_animal = moved_animal
+        # while self.queue1.front:
+        #     moved_animal = copy.deepcopy(self.queue1.front)
+        #     # moved_animal.next = None
+        #     if moved_animal.type == pref:
+        #         adopted_animal = moved_animal
+        #         self.queue1.dequeue()
+        #     else:
+        #         moved_animal.next = None
+        #         self.queue1.dequeue()
+        #         self.queue2.enqueue(moved_animal)
 
-                self.queue1.dequeue()
-                break
-
+        # while self.queue2.front:
+        #     moved_animal = copy.deepcopy(self.queue2.front)
+        #     print("this is 2nd loop", moved_animal)
+        #     moved_animal.next = None
+        #     self.queue2.dequeue()
+        #     self.queue1.enqueue(moved_animal)
+        #     print("this is 2nd loop", self.queue1.front)
+        if self.queue1.front == pref:
+            adopted_animal = self.queue1.front
             self.queue1.dequeue()
-            self.queue2.enqueue(moved_animal)
+            return adopted_animal
+        else:
+            while self.queue1.front !=pref:
+                moved_animal =  self.queue1.front
+                self.queue2.enqueue(moved_animal)
+                self.queue1.dequeue()
 
-        while self.queue2.front:
-            moved_animal = self.queue2.front
-            self.queue2.dequeue()
-            self.queue1.enqueue(moved_animal)
-
+                adopted_animal = self.queue1.front
+            while self.queue2.front:
+                moved_animal =  self.queue2.front
+                self.queue1.enqueue(moved_animal)
+                self.queue2.dequeue()
 
         return adopted_animal
+
+
+
+
 
 
 if __name__ == "__main__":
