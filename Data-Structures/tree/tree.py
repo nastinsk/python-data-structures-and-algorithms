@@ -10,8 +10,11 @@ class BinaryTree:
     def __init__(self):
         self._root = None
 
-    def pre_order(self, node=None, arr = []):
+    def pre_order(self, node=None, arr = None):
         """Method to return an array of trre values in "pre-order" order"""
+
+        if arr is None:
+            arr = []
 
         node = node or self._root
 
@@ -25,8 +28,10 @@ class BinaryTree:
 
         return arr
 
-    def in_order(self, node=None, arr = []):
+    def in_order(self, node=None, arr = None):
         """Method to return an array of tree values "in-order" """
+        if arr is None:
+            arr = []
 
         node = node or self._root
 
@@ -36,7 +41,7 @@ class BinaryTree:
         arr.append(node.value)
 
         if node.right:
-            self.pre_order(node.right, arr)
+            self.in_order(node.right, arr)
 
         return arr
 

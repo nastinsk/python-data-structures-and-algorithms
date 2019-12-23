@@ -13,7 +13,7 @@ def my_bst():
     tree.add(19)
     tree.add(17)
     tree.add(23)
-   
+
 
     return tree
 
@@ -86,13 +86,13 @@ def test_contains_true(my_bst):
 def test_pre_order(my_bst):
     assert my_bst.pre_order() == [15, 11, 7, 5, 8, 13, 19, 17, 23]
 
-# def test_pre_order_one():
-#     tree_one = BinarySearchTree()
-#     tree_one.add(20)
-#     assert tree_one.pre_order() == [20]
+def test_pre_order_one():
+    tree_one = BinarySearchTree()
+    tree_one.add(20)
+    assert tree_one.pre_order() == [20]
 
-# def test_in_order(my_bst):
-#     assert my_bst.in_order() == [5, 7, 8, 11, 13, 15, 17, 19, 23]
+def test_in_order(my_bst):
+    assert my_bst.in_order() == [5, 7, 8, 11, 13, 15, 17, 19, 23]
 
 def test_post_order(my_bst):
     assert my_bst.post_order() == [5, 8, 7, 13, 11, 17, 23, 19, 15]
