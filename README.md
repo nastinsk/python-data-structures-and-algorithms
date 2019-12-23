@@ -16,6 +16,8 @@ ________________________________________________________________
 
 * [FIFO Animal Shelter](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/fifo_animal_shelter)
 
+* [FizzBuzz Tree](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/fizz_buzz_tree)
+
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
 
