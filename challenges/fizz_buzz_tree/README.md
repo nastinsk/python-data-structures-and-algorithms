@@ -15,4 +15,4 @@ Space Big O(N*tree_height)
 ## Solution
 ![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/fizz-buzz-tree.jpg)
 
-[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/fifo_animal_shelter/fizz_buzz_tree.py)
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/fizz_buzz_tree/fizz_buzz_tree.py)
