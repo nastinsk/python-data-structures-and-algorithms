@@ -50,7 +50,7 @@ def test_find_max__imbalanced_binarytree():
 
 # This test fails, this has something to do with 0, enterpreter evaluates it as falsy
 # can find a way how to make it truthy
-@pytest.mark.skip
+
 def test_find_max_binarytree_zeros():
     tree = BinaryTree()
     tree._root = _Node(-2)

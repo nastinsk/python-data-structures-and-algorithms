@@ -9,7 +9,7 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 ## Approach & Efficiency
 
 Time Big O(n)
-Space Big O(1)
+Space Big O(W) where W - Width of the tree because we are using Queue through traversiong of our tree
 
 
 ## Solution

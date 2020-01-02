@@ -135,16 +135,17 @@ class BinaryTree:
         """ An instance method that returns the maximum value stored in the tree"""
 
         q = Queue()
-        max_ = None
-        if self._root:
-            q.enqueue(self._root)
-            max_ = self._root.value
+       
+        if not self._root:
+            return None
 
-        while q.peek():
+        max_ = self._root.value
+        q.enqueue(self._root)
+
+        while not q.is_empty():
             node_front = q.dequeue()
 
-            if node_front.value > max_:
-                max_ = node_front.value
+            max_ = max(max_, node_front.value)
 
 
             if node_front.left:
