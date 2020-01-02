@@ -122,7 +122,7 @@ class LinkedList:
             step_count = abs(k)-1
 
         current = self.head
-        for i in range(step_count):
+        for _ in range(step_count):
             current = current.next
         return current.value
 
