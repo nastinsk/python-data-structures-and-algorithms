@@ -18,6 +18,8 @@ ________________________________________________________________
 
 * [FizzBuzz Tree](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/fizz_buzz_tree)
 
+* [Find Max Value in Binary Tree](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/find_maximum_binary_tree)
+
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
 
