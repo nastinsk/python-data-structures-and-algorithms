@@ -131,49 +131,30 @@ class BinaryTree:
 
         return array
 
+    def find_maximum_value(self):
+        """ An instance method that returns the maximum value stored in the tree"""
 
-class BinarySearchTree(BinaryTree):
-    """Class to create a Binary Search Tree """
+        q = Queue()
+        max_ = None
+        if self._root:
+            q.enqueue(self._root)
+            max_ = self._root.value
 
-    def add(self, value):
-        """Method that accepts a value, and adds a new node with that value in the correct location in the binary search tree"""
+        while q.peek():
+            node_front = q.dequeue()
 
-        node = _Node(value)
-        if not self._root:
-            self._root = node
-            return
-
-        current = self._root
-        while True:
-            if node.value < current.value:
-                if current.left:
-                    current = current.left
-                else:
-                    current.left = node
-                    return
-            else:
-                if current.right:
-                    current = current.right
-                else:
-                    current.right = node
-                    return
+            if node_front.value > max_:
+                max_ = node_front.value
 
 
-    def contains(self,value):
-        """Method that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once."""
+            if node_front.left:
+                q.enqueue(node_front.left)
+            if node_front.right:
+                q.enqueue(node_front.right)
 
-        if self._root == None:
-            raise myException("Tree is empty")
+        return max_
 
-        current = self._root
-        while current:
-            if current.value == value:
-                return True
-            if current.value > value:
-                current = current.left
-            else:
-                current = current.right
-        return False
+
 
 class myException(Exception):
     pass

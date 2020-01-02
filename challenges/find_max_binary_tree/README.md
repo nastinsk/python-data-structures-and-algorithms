@@ -8,11 +8,11 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 
 ## Approach & Efficiency
 
-Time Big O(
-Space Big O(
+Time Big O(n)
+Space Big O(1)
 
 
 ## Solution
-![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/find-maximum-binary-tree.jpg)
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/find-maximum-binary-tree.jpg)  -- Upload picture
 
 [Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/find_maximum_binary_tree/find_maximum_binary_tree.py)
