@@ -13,6 +13,6 @@ Space Big O(W) where W - Width of the tree because we are using Queue through tr
 
 
 ## Solution
-![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/find-maximum-binary-tree.jpg)  -- Upload picture
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/find-maximum-binary-tree.jpg) 
 
 [Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/find_maximum_binary_tree/find_maximum_binary_tree.py)
