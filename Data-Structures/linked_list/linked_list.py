@@ -83,22 +83,6 @@ class LinkedList:
         else:
             return 'Value is not in the list'
 
-    #  def insert_before(self, value, new_value):
-    #     """method to insert new element before the given element of the list"""
-
-    #     if self.includes(value):
-    #         current = self.head
-    #         previous = current
-    #         while current:
-    #             if current.value == value:
-    #                 node = Node(new_value)
-    #                 node.next = current
-    #                 previous.next = node
-    #                 return self.__str__()
-    #             previous = current
-    #             current = current.next
-    #     else:
-    #         return 'Value is not in the list'
 
     def insert_after(self, value, new_value):
         """method to insert new element after the given element of the list"""
