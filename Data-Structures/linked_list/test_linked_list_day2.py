@@ -45,17 +45,19 @@ def test_append_2():
 def test_insert_before_node_in_the_middle():
     assert "d, 4, b, 3, 123, cat, a, z, z2, e2" == linked_list.insert_before('cat', 123)
 
+def test_insert_before_first_node():
+    assert "new_first, d, 4, b, 3, 123, cat, a, z, z2, e2" == linked_list.insert_before('d', "new_first")
+
+
 def test_insert_after_the_middle():
-    assert "d, 4, b, 3, 123, cat, dog, a, z, z2, e2" == linked_list.insert_after('cat', 'dog')
+    assert "new_first, d, 4, b, 3, 123, cat, dog, a, z, z2, e2" == linked_list.insert_after('cat', 'dog')
 
 def test_insert_after_the_last():
-    assert "d, 4, b, 3, 123, cat, dog, a, z, z2, e2, 1000" == linked_list.insert_after('e2', '1000')
+    assert "new_first, d, 4, b, 3, 123, cat, dog, a, z, z2, e2, 1000" == linked_list.insert_after('e2', '1000')
 
 
 
-
-# from linked_list import LinkedList, Node
-
+# SCHOOL TESTS
 
 @pytest.fixture
 def node():
@@ -139,14 +141,33 @@ def test_ll_insert_before(ll, filled_ll):
     ll.insert_before(2, 6)
     assert ll.head == None
 
-    # # Single Item List
-    # ll.append(2)
-    # ll.insert_before(2, 1)
-    # assert ll.head.value == 1
+    # Single Item List
+    ll.append(2)
+    assert ll.head.value == 2
+    ll.insert_before(2, 1)
+    assert ll.head.value == 1
 
-    # # Target Not Present
-    # ll.insert_before(1, 3)
-    # assert ll.head.value == 1
+    #TEST CHANGED (before was ll.insert_before(1, 3))
+    # NEED CLARIFICATION
+    # Target Not Present
+    ll.insert_before(9, 3)
+    assert ll.head.value == 1
+
+    ll.insert_before(1, 3)
+    assert ll.head.value == 3
+
+    ll.append(8)
+    assert ll.head.value == 3
+    assert ll.head.next.value == 1
+    assert ll.head.next.next.value == 2
+    assert ll.head.next.next.next.value == 8
+
+    # Target Not Present
+    ll.insert_before(23, 5)
+    assert ll.head.value == 3
+    assert '3, 1, 2, 5, 8' == ll.insert_before(8, 5)
+    assert ll.head.next.next.next.value == 5
+    assert ll.head.next.next.next.next.value == 8
 
     # Filled List
     filled_ll.insert_before(14, 'howdy')

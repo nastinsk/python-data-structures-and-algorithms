@@ -68,17 +68,37 @@ class LinkedList:
 
         if self.includes(value):
             current = self.head
-            previous = current
+            previous = None
             while current:
                 if current.value == value:
                     node = Node(new_value)
                     node.next = current
-                    previous.next = node
+                    if previous:
+                        previous.next = node
+                    else:
+                        self.head = node
                     return self.__str__()
                 previous = current
                 current = current.next
         else:
             return 'Value is not in the list'
+
+    #  def insert_before(self, value, new_value):
+    #     """method to insert new element before the given element of the list"""
+
+    #     if self.includes(value):
+    #         current = self.head
+    #         previous = current
+    #         while current:
+    #             if current.value == value:
+    #                 node = Node(new_value)
+    #                 node.next = current
+    #                 previous.next = node
+    #                 return self.__str__()
+    #             previous = current
+    #             current = current.next
+    #     else:
+    #         return 'Value is not in the list'
 
     def insert_after(self, value, new_value):
         """method to insert new element after the given element of the list"""
@@ -126,7 +146,4 @@ class LinkedList:
             current = current.next
         return current.value
 
-if __name__ == "__main__":
 
-    linked_list = LinkedList()
-    linked_list.kth_from_end(5)
