@@ -31,7 +31,7 @@ def fizz_buzz_tree(tree):
         return new_tree
 
     def helper(current):
-    """Helper function to use in recurtion to add new values in the new_tree according to their positions in the original tree"""
+        """Helper function to use in recurtion to add new values in the new_tree according to their positions in the original tree"""
         node = _Node(fizz_buzz(current.value))
 
         if current.left:
