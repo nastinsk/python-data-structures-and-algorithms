@@ -38,7 +38,6 @@ def test_find_max_binarytree_same_values():
     tree._root.right.left = _Node(1)
     assert tree.find_maximum_value() == 1
 
-
 def test_find_max__imbalanced_binarytree():
     tree = BinaryTree()
     tree._root = _Node(-2)
@@ -47,9 +46,6 @@ def test_find_max__imbalanced_binarytree():
     tree._root.left.left.left = _Node(2)
     tree._root.left.left.left.left = _Node(2)
     assert tree.find_maximum_value() == 9
-
-# This test fails, this has something to do with 0, enterpreter evaluates it as falsy
-# can find a way how to make it truthy
 
 def test_find_max_binarytree_zeros():
     tree = BinaryTree()
