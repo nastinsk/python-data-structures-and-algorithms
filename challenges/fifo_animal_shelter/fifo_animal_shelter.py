@@ -26,8 +26,6 @@ class Queue:
     def enqueue(self, new_node):
         """Method that takes any value as an argument and adds a new node with that value to the back of the queue """
 
-        # new_node = Node(value)
-
         if self.is_empty():
             self.front = new_node
             self.rear = new_node
@@ -42,7 +40,7 @@ class Queue:
             temp = self.front
             self.front = self.front.next
             temp.next = None
-            return temp.value
+            return temp
         else:
             return None
 
@@ -54,60 +52,46 @@ class Queue:
         return None
 
 class Animal:
+    """Class that creates animal imstance node with the given value"""
     def __init__(self, pet_name):
         self.value = pet_name
         self.next = None
 
 class Cat(Animal):
+    """Class that creates Cat imstance node and inherits it's properties from Animal class"""
     type = 'cat'
 
 class Dog(Animal):
+    """Class that creates Dog imstance node and inherits it's properties from Animal class"""
     type = 'dog'
 
 
 class AnimalShelter:
+    """Class  which holds only dogs and cats instances. The shelter operates using a first-in, first-out approach."""
     def __init__(self):
+        """Method to initiate Animal shelter instance with creating two empty Queues"""
         self.queue1 = Queue()
         self.queue2 = Queue()
 
     def enqueue(self, animal):
-        self.queue1.enqueue(animal)
+        """Method to add animal to the shelter usinf FIFO approach"""
+        if isinstance(animal, Cat) or isinstance(animal, Dog):
+            self.queue1.enqueue(animal)
+        else:
+            return "Animal must be cat or dog"
 
     def dequeue(self, pref):
+        """Method to take only preferable type of animal from the shelter usinf FIFO approach"""
         adopted_animal = None
-        # while self.queue1.front:
-        #     moved_animal = copy.deepcopy(self.queue1.front)
-        #     # moved_animal.next = None
-        #     if moved_animal.type == pref:
-        #         adopted_animal = moved_animal
-        #         self.queue1.dequeue()
-        #     else:
-        #         moved_animal.next = None
-        #         self.queue1.dequeue()
-        #         self.queue2.enqueue(moved_animal)
 
-        # while self.queue2.front:
-        #     moved_animal = copy.deepcopy(self.queue2.front)
-        #     print("this is 2nd loop", moved_animal)
-        #     moved_animal.next = None
-        #     self.queue2.dequeue()
-        #     self.queue1.enqueue(moved_animal)
-        #     print("this is 2nd loop", self.queue1.front)
-        if self.queue1.front == pref:
-            adopted_animal = self.queue1.front
-            self.queue1.dequeue()
-            return adopted_animal
-        else:
-            while self.queue1.front !=pref:
-                moved_animal =  self.queue1.front
-                self.queue2.enqueue(moved_animal)
-                self.queue1.dequeue()
+        while not self.queue1.is_empty():
+            if self.queue1.front.type == pref.lower() and adopted_animal == None:
+                adopted_animal= self.queue1.dequeue()
+            else:
+                self.queue2.enqueue(self.queue1.dequeue())
 
-                adopted_animal = self.queue1.front
-            while self.queue2.front:
-                moved_animal =  self.queue2.front
-                self.queue1.enqueue(moved_animal)
-                self.queue2.dequeue()
+        while not self.queue2.is_empty():
+            self.queue1.enqueue(self.queue2.dequeue())
 
         return adopted_animal
 
@@ -116,33 +100,7 @@ class AnimalShelter:
 
 
 
-if __name__ == "__main__":
-
-    shelter = AnimalShelter()
-
-    shelter.enqueue(Cat("1"))
-    shelter.enqueue(Dog("2"))
-    shelter.enqueue(Cat("3"))
-    shelter.enqueue(Cat("a"))
-    shelter.enqueue(Dog("4"))
 
 
-    print('rear', shelter.queue1.rear.value)
-    print('front', shelter.queue1.front.value)
-    pet_adopted = shelter.dequeue('cat')
-    print(pet_adopted.type)
-    print(pet_adopted.value)
 
-    print('rear', shelter.queue1.rear.value)
-    print('front', shelter.queue1.front.value)
-    pet_adopted = shelter.dequeue('cat')
-    print(pet_adopted.type)
-    print(pet_adopted.value)
 
-    # shelter.enqueue(Dog("b"))
-
-    print('rear', shelter.queue1.rear.value)
-    print('front', shelter.queue1.front.value)
-    pet_adopted = shelter.dequeue('dog')
-    print(pet_adopted.type)
-    print(pet_adopted.value)

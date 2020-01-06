@@ -18,11 +18,9 @@ Internal state after: </br>
 [dog3]->[cat2]->[dog1]->[cat1] </br>
 
 
-
-
-
-
 ## Approach & Efficiency
+For the enqueue(animal) method time big O(1), space big O(1)
+For the dequeue(pref) method time big O(n), space big O(n)
 
 
 ## Solution
