@@ -8,11 +8,11 @@ Once you are done with your article, code a working, tested implementation of In
 
 ## Approach & Efficiency
 
-Time Big O()
-Space Big O()
+* Space complexity Big O(1)
+* Time complexity Big O(n^2)
 
 
 ## Solution
-![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/insertion_sort/BLOG.md)
+[Blog](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/insertion_sort/BLOG.md)
 
 [Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/insertion_sort/insertion_sort.py)
