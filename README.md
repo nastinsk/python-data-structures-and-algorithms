@@ -20,6 +20,9 @@ ________________________________________________________________
 
 * [Find Max Value in Binary Tree](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/find_max_binary_tree)
 
+* [Insertion Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/insertion_sort)
+
+
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
 
@@ -27,7 +30,7 @@ ________________________________________________________________
 
 * [Binary Tree and BST Implementation](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/tree)
 
-## Blog entry
 
-* [Insertion Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/insertion_sort)
+
+
 
