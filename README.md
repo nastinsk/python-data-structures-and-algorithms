@@ -27,3 +27,7 @@ ________________________________________________________________
 
 * [Binary Tree and BST Implementation](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/tree)
 
+## Blog entry
+
+*[Insertion Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/insertion_sort)
+
