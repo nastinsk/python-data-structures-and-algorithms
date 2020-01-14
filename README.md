@@ -29,5 +29,5 @@ ________________________________________________________________
 
 ## Blog entry
 
-*[Insertion Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/insertion_sort)
+* [Insertion Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/insertion_sort)
 
