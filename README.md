@@ -22,6 +22,8 @@ ________________________________________________________________
 
 * [Insertion Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/insertion_sort)
 
+* [Merge Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/merge_sort)
+
 
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
