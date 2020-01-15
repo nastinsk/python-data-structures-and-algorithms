@@ -6,7 +6,7 @@ Merge sort breaks a list up into the smaller lists than merges the lists back to
 * Merge Sort is a stable sort which means that the same element in an array maintain their original positions with respect to each other.
 
 To sort a sequence S with n elements using the three divide-and-conquer steps, the merge-sort algorithm proceeds as follows:
-1. Divide: If S has zero or one element, return S immediately; it is already sorted. Otherwise (S has at least two elements), remove all the elements from S and put them into two sequences, S1 and S2, each containing about half of the elements of S; that is, S1 contains the first [n/2] elements of S, and S2 contains the remaining [n/2] elements.
+1. Divide: If S has zero or one element, return S immediately; it is already sorted. Otherwise (S has at least two elements), remove all the elements from S and put them into two sequences, S1 and S2, each containing about half of the elements of S; that is, S1 contains the first [n/2] elements of S, and S2 contains the remaining [n/2] elements.
 2. Conquer: Recursively sort sequences S1 and S2.
 3. Combine: Put back the elements into S by merging the sorted sequences S1
 and S2 into a sorted sequence.
