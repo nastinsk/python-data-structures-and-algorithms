@@ -24,6 +24,8 @@ ________________________________________________________________
 
 * [Merge Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/merge_sort)
 
+* [Quick Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/quick_sort)
+
 
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
