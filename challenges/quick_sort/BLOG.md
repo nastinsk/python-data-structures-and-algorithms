@@ -41,7 +41,7 @@ ALGORITHM Swap(arr, i, low)
 #### Sample array: [8,4,23,42,16,15]
 
 ### Pass 1
-![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/merge_sort/assets/sort1.jpg)
+![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/quick_sort/assets/sort1.jpg)
 We are calling a quick_sort tfunction passing our list, 0(first index in list) and 5(last index in list) as a parameters.
 
 Inside of our quick_sort function we are calling partition function(last, 0, 5).
@@ -49,20 +49,20 @@ The last element of the list with index 5 becomes a pivot. Then we put all eleme
 
 
 ### Pass 2
-![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/merge_sort/assets/sort2.jpg)
+![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/quick_sort/assets/sort2.jpg)
 
 We are calling quick_sort function recursively on the left and right parts of the list.
 
 
 
 ### Pass 3
-![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/merge_sort/assets/sort3.jpg)
+![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/quick_sort/assets/sort3.jpg)
 
 Inside of each quick_sort() function call we are having a call of partition function.
 
 
 ### Pass 4
-![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/merge_sort/assets/sort4.jpg)
+![Pass1](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/quick_sort/assets/sort4.jpg)
 
 
 
