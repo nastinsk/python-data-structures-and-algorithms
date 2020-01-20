@@ -26,6 +26,7 @@ ________________________________________________________________
 
 * [Quick Sort](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/quick_sort)
 
+* [Repeated Word](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/repeated_word)
 
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
