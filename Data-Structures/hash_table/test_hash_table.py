@@ -84,8 +84,8 @@ def test_get_method_with_collisions(my_hash_table):
     assert hash_table.get("NewKey") == "new value"
     assert hash_table.get(12) == "int key"
     assert hash_table.get(0.57) == "float key"
-    assert hash_table.get("aCt") == "No data found for the given key"
-    assert hash_table.get("Alice") == "No data found for the given key"
+    assert hash_table.get("aCt") == None
+    assert hash_table.get("Alice") == None
 
 def test_contains_method_true(my_hash_table):
     hash_table = my_hash_table

@@ -84,7 +84,7 @@ class HashTable:
         if self._array[index] != 0 and self._array[index].includes(key):
             return self._array[index].includes(key)
         else:
-            return "No data found for the given key"
+            return None
 
 
     def contains(self, key):
