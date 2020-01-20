@@ -60,3 +60,8 @@ def test_strings():
     lst = ['cat','a', 'c', 'b']
     quick_sort(lst, 0, 3)
     assert lst == ['a', 'b', 'c', 'cat']
+
+def test_another_lst():
+    lst = [5,12,7,5,5,7]
+    quick_sort(lst, 0, 5)
+    assert lst == [5, 5, 5, 7, 7, 12]
