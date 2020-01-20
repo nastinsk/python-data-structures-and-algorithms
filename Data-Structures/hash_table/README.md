@@ -38,4 +38,5 @@ So the search and insertion function of a data element becomes much faster as th
     -  get(self, key): method that takes in the key and returns the value from the table.
     -  contains(self, key): method that takes in the key and returns a boolean, indicating if the key exists in the table already
 
-
+* KeyValueAlreadyExists(Exception):
+    Raised when the given key already exists in the hash table

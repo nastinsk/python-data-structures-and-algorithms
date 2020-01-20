@@ -36,7 +36,7 @@ class LinkedList:
 class HashTable:
     """Class to create a instance of Hash Table data structure"""
 
-    def __init__(self, size):
+    def __init__(self, size=1024):
         """Method to initalise Hash table instance, takes the integer as a parameter to create a hash table based on the array of the given length"""
 
         self._array = [0 for i in range(size)]
@@ -70,10 +70,8 @@ class HashTable:
         else:
             ll = self._array[index]
 
-            # Check if we want to give user ability to change the value in key value pair in the future, if so update the line below
-
             if ll.includes(key):
-                return "Current key for key-value pair already exists in the table"
+                raise KeyValueAlreadyExists
             else:
                 ll.insert(key, value)
 
@@ -98,6 +96,9 @@ class HashTable:
             return False
 
 
+class KeyValueAlreadyExists(Exception):
+    """Raised when the given key already exists in the hash table"""
+    pass
 
 
 
