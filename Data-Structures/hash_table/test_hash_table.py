@@ -1,10 +1,10 @@
-from hash_table import HashTable, LinkedList, _Node
+from hash_table import HashTable, LinkedList, _Node, KeyValueAlreadyExists
 
 import pytest
 
 @pytest.fixture
 def my_hash_table():
-    hash_table = HashTable(1024)
+    hash_table = HashTable()
 
     # add first key-value pair on the index 808
     hash_table.add("Cat", "Frodo")
@@ -32,7 +32,7 @@ def test_create_hash_table_3_elements():
 
 
 def test_hash_method():
-    hash_table = HashTable(1024)
+    hash_table = HashTable()
 
     assert hash_table.hash('Cat') == 808
 
@@ -43,14 +43,14 @@ def test_hash_method():
     assert hash_table.hash("House") == 860
 
 def test_add_method():
-    hash_table = HashTable(1024)
+    hash_table = HashTable()
 
     # add first key-value pair
     hash_table.add("Cat", "Frodo")
-    # check if index that not 808 still has 0 in it
+    # check if index that not 808 still has '0' in it
     assert hash_table._array[809] == 0
 
-    # check if index 808 not 0 anymore
+    # check if index 808 not '0' anymore
     assert hash_table._array[808] != 0
 
     assert hash_table._array[808].head.key == "Cat"
@@ -74,7 +74,6 @@ def test_add_collision_same_key(my_hash_table):
     assert hash_table._array[808].head.next.key == "Cat"
     assert hash_table._array[808].head.next.value == "Frodo"
     assert hash_table._array[808].head.next.next == None
-    assert hash_table.add("aCt", "Orel") == "Current key for key-value pair already exists in the table"
 
 def test_get_method_with_collisions(my_hash_table):
     hash_table = my_hash_table
@@ -100,6 +99,12 @@ def test_contains_method_false(my_hash_table):
     hash_table = my_hash_table
     assert hash_table.contains("Alice") == False
     assert hash_table.contains("Wonderland") == False
+
+
+def test_bad_input(my_hash_table):
+    hash_table = my_hash_table
+    with pytest.raises(KeyValueAlreadyExists):
+        result = hash_table.add('Dog', '6')
 
 
 
