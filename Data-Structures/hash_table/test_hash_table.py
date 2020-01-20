@@ -17,14 +17,14 @@ def my_hash_table():
 
     return hash_table
 
-def test_create_hash_table():
+def test_create_hash_table_20_element():
 
     hash_table = HashTable(20)
 
     assert hash_table._array == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 
-def test_create_hash_table2():
+def test_create_hash_table_3_elements():
 
     hash_table = HashTable(3)
 
@@ -74,9 +74,7 @@ def test_add_collision_same_key(my_hash_table):
     assert hash_table._array[808].head.next.key == "Cat"
     assert hash_table._array[808].head.next.value == "Frodo"
     assert hash_table._array[808].head.next.next == None
-
     assert hash_table.add("aCt", "Orel") == "Current key for key-value pair already exists in the table"
-
 
 def test_get_method_with_collisions(my_hash_table):
     hash_table = my_hash_table
@@ -86,5 +84,23 @@ def test_get_method_with_collisions(my_hash_table):
     assert hash_table.get("NewKey") == "new value"
     assert hash_table.get(12) == "int key"
     assert hash_table.get(0.57) == "float key"
+    assert hash_table.get("aCt") == "No data found for the given key"
     assert hash_table.get("Alice") == "No data found for the given key"
+
+def test_contains_method_true(my_hash_table):
+    hash_table = my_hash_table
+    assert hash_table.contains("Dog") == True
+    assert hash_table.contains("goD") == True
+    assert hash_table.contains("ogD") == True
+    assert hash_table.contains("NewKey") == True
+    assert hash_table.contains(12) == True
+    assert hash_table.contains(0.57) == True
+
+def test_contains_method_false(my_hash_table):
+    hash_table = my_hash_table
+    assert hash_table.contains("Alice") == False
+    assert hash_table.contains("Wonderland") == False
+
+
+
 

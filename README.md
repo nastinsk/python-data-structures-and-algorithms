@@ -32,8 +32,9 @@ ________________________________________________________________
 
 * [Stacks and Queues](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/stacks_and_queues)
 
-* [Binary Tree and BST Implementation](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/tree)
+* [Binary Tree and BST](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/tree)
 
+* [Hash Tables](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/hash_table)
 
 
 
