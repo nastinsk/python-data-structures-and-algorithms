@@ -54,3 +54,35 @@ def test_no_match(my_tree):
     values = [100, 100, 100, 100]
     tree2 = build(values)
     assert tree_intersection(tree1, tree2) == None
+
+def test_everything_match(my_tree):
+    tree1 = my_tree
+    values = [7, 3, 2, 6, 9, 10, 1, 5, 8]
+    tree2 = build(values)
+
+    assert tree_intersection(tree1, tree2) == {7, 3, 2, 6, 9, 10, 1, 5, 8}
+
+def test_floats():
+    tree1 = build([0.3, 5, -54, -3, 34])
+    tree2 = build([-54, 95, 0.3, 123, 34])
+
+    assert tree_intersection(tree1, tree2) == {0.3, -54, 34}
+
+def test_empty_tree():
+    tree1 = build([])
+    tree2 = build([3, 4])
+    assert tree_intersection(tree1, tree2) == None
+
+def test_2nd_tree_is_empty():
+    tree1 = build([3, 3, 4, 5])
+    tree2 = build([])
+    assert tree_intersection(tree1, tree2) == None
+
+def test_same_values():
+    tree1 = build([10, 10, 10, 8])
+    tree2 = build([10, 10, 10, 10, 10])
+    assert tree_intersection(tree1, tree2) == {10}
+
+
+
+

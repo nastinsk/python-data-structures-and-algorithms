@@ -35,9 +35,10 @@ tree2:
 ## Output: {10,9,8,5}
 
 ## Solution
-![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/tree-intersectionjpg)
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/tree-intersection.jpg)
 
 [Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/challenges/tree_intersection/tree_intersection.py)
 
 
-for test use command python -m pytest  (this is the only way to make pytest work with binary tree module)
+## Notes:
+To run the test file test use command "python -m pytest" (this is the only way to make pytest work with binarytree module)

@@ -28,6 +28,8 @@ ________________________________________________________________
 
 * [Repeated Word](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/repeated_word)
 
+* [Tree Intersection](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/tree_intersection)
+
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
 

@@ -24,6 +24,8 @@ def tree_intersection(tree1, tree2):
 
 
 def pre_order(tree, node=None, tree_set=None):
+    if tree == None:
+        return None
     if tree_set is None:
         tree_set = set()
 
@@ -37,6 +39,8 @@ def pre_order(tree, node=None, tree_set=None):
     return tree_set
 
 def pre_order2(tree, tree_set, node=None, set_result=None):
+    if tree_set == None or tree == None:
+        return None
     if set_result is None:
         set_result = set()
 
