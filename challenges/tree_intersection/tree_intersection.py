@@ -1,18 +1,5 @@
 from binarytree import tree, build
 
-# class _Node:
-#     """Private class to create a nodes for the tree"""
-#     def __init__(self, value):
-#         self.value = value
-#         self.left = None
-#         self.right = None
-#         self.next = None
-
-# class BinaryTree:
-#     """Class to create a binary tree"""
-#     def __init__(self):
-#         self._root = None
-
 
 def tree_intersection(tree1, tree2):
     tree1_set = pre_order(tree1)
@@ -56,9 +43,3 @@ def pre_order2(tree, tree_set, node=None, set_result=None):
     return set_result
 
 
-
-if __name__ == "__main__":
-
-    values = [10, 134, 5, 23, 9, 10, 45, 32, 8]
-    root = build(values)
-    print(root)
