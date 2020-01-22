@@ -1,10 +1,10 @@
-# Left Join
+# Hashmap Left Join
 
 ## Author: Anastasia Lebedeva, Travis Williams
 
 ## Challenge
 Implement a simplified LEFT JOIN for 2 Hashmaps.
-For this challenge we assumed that our imput is 2 dictionaries.
+For this challenge we assumed that our imput is 2 dictionaries because internally dictionaries implemented as a hashmaps in python
 
 ## Approach & Efficiency
 Time Big O(n)
