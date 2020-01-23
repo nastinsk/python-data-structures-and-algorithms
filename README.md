@@ -30,6 +30,9 @@ ________________________________________________________________
 
 * [Tree Intersection](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/tree_intersection)
 
+* [Hashmap Left Join](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/left_join)
+
+
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)
 
