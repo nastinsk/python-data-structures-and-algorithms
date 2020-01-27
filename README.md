@@ -42,6 +42,8 @@ ________________________________________________________________
 
 * [Hash Tables](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/hash_table)
 
+* [Graphs](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/graph)
+
 
 
 
