@@ -1,4 +1,4 @@
-from stacks_and_queues import Queue, Node
+from stacks_and_queues import Queue, Node, Stack
 
 class Graph:
     """Class to implement Graph object with the given methods"""
@@ -60,7 +60,7 @@ class Graph:
     def breadth_first(self, starting_vertex):
         """
         Method to do breadth-first traversal on a graph.
-        Input: startin vertex
+        Input: starting vertex
         Output: list of vertices in the breadth-first order
         """
         vertices = []
@@ -79,6 +79,38 @@ class Graph:
                 if not neighbor[0].visited:
                     neighbor[0].visited = True
                     breadth.enqueue(neighbor[0])
+
+        for node in self._adjacency_list:
+            node.visited = False
+
+        return vertices
+
+    def depth_first(self, starting_vertex):
+        """
+        Method to do depth-first traversal on a graph.
+        Input: starting vertex
+        Output: list of vertices in the depth-first order
+        """
+
+        vertices = []
+        depth = Stack()
+
+        if starting_vertex not in self._adjacency_list:
+            raise ValueError
+        
+        depth.push(starting_vertex)
+
+        while not depth.is_empty():
+           top_vertex = depth.pop()
+           vertices.append(top_vertex.value)
+           top_node_neighbors = self.get_neighbors(top_vertex)
+
+           for neighbor in top_node_neighbors[::-1]:
+               if not neighbor[0].visited:
+                   top_vertex.visited = True
+                   neighbor[0].visited = True
+
+                   depth.push(neighbor[0])
 
         for node in self._adjacency_list:
             node.visited = False

@@ -47,9 +47,30 @@ Implement a breadth-first traversal on a graph.
 * breadth_first time Big O(n), space Big O(n)
 
 ### Input: Vertex
-### Output: list of nodes staring from the given vertex in the readth-first order
+### Output: list of nodes staring from the given vertex in the breadth-first order
 
 ## Solution
 ![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/breadth-first-graph.jpg)
+
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/Data-Structures/graph/graph.py)
+
+
+
+# Deapth-first method
+
+## Challenge
+Implement a deapth-first traversal on a graph.
+
+## Approach & Efficiency
+* deapth_first time Big O(n^2), space Big O(n)
+
+### Input: Vertex
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/Day28Example.png)
+
+### Output: list of nodes staring from the given vertex in the deapth-first order
+[A, B, C, G, D, E, H, F]
+
+## Solution
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/depth-first-graph.jpg)
 
 [Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/Data-Structures/graph/graph.py)
