@@ -274,4 +274,25 @@ def test_breadth_firts_islands_nodes():
     assert vertices_lst == [apple]
 
 
+def test_breadth_first_chech_visited():
+    graph = Graph()
+
+    banana = graph.add_node('banana')
+
+    apple = graph.add_node('apple')
+
+    strawberry = graph.add_node('strawberry')
+
+    graph.add_edge(banana, apple)
+    graph.add_edge(apple, strawberry)
+
+    vertices_lst = graph.breadth_first(banana)
+    assert vertices_lst == [banana, apple, strawberry]
+
+    tomato = graph.add_node('tomato')
+    graph.add_edge(apple, tomato)
+
+    vertices_lst = graph.breadth_first(banana)
+    assert vertices_lst == [banana, apple, strawberry, tomato]
+
 
