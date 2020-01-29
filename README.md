@@ -32,6 +32,8 @@ ________________________________________________________________
 
 * [Hashmap Left Join](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/left_join)
 
+* [Get edges in graph/Flight estimate](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/challenges/get_edge)
+
 
 ## Data Structures
 * [Linked List](https://github.com/nastinsk/python-data-structures-and-algorithms/tree/master/Data-Structures/linked_list)

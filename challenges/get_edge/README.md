@@ -8,8 +8,8 @@ Write a function based on the specifications above, which takes in a graph, and 
 
 
 ## Approach & Efficiency
-Time Big O()
-Space Big O()
+Time Big O(n^2)
+Space Big O(n)
 
 ## Example
 ### flights_graph:

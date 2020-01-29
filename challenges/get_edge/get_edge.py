@@ -1,23 +1,25 @@
 from graph import Graph
 
-def get_edge(graph, arr):
-    def helper(lst_nodes):
-        dict_nodes = {}
-        for node in lst_nodes:
-            dict_nodes[node.value] = node
-        return dict_nodes
+def helper(lst_nodes):
+    dict_nodes = {}
+    for node in lst_nodes:
+        dict_nodes[node.value] = node
+    return dict_nodes
 
-    def helper2(lst_nodes):
-        neighbors = {}
-        for node in lst_nodes:
-            neighbors[node[0].value] = [node, node[1]]
-        return neighbors
+def helper2(lst_nodes):
+    neighbors = {}
+    for node in lst_nodes:
+        neighbors[node[0].value] = node
+    return neighbors
+
+def get_edge(graph, arr):
+
 
     dict_nodes = helper(graph.get_nodes())
     trip_price = 0
 
     for i in range (0, len(arr)-1):
-        
+
         if arr[i] not in dict_nodes:
             return False, '$0'
 
