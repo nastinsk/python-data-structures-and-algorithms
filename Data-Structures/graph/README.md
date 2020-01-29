@@ -36,3 +36,20 @@ Implement the graph, which should be represented as an adjacency list, and shoul
 * size():
     - Returns the total number of nodes in the graph
 
+
+
+# Breadth-first method
+
+## Challenge
+Implement a breadth-first traversal on a graph.
+
+## Approach & Efficiency
+* breadth_first time Big O(n), space Big O(n)
+
+### Input: Vertex
+### Output: list of nodes staring from the given vertex in the readth-first order
+
+## Solution
+![Whiteboard Solution](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/assets/breadth-first-graph.jpg)
+
+[Link to Code](https://github.com/nastinsk/python-data-structures-and-algorithms/blob/master/Data-Structures/graph/graph.py)
