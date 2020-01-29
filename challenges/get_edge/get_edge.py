@@ -32,18 +32,6 @@ def get_edge(graph, arr):
             else:
                 return False, '$0'
 
-            # neighbors = graph.get_neighbors(dict_nodes[arr[i]])
-            # for el in neighbors:
-            #     print(neighbors[0][0].value, neighbors[1][0].value, neighbors[2][0].value)
-
-
-            #     if el[0].value == arr[i+1]:
-            #         print("now")
-            #         trip_price += el[1]
-            #         break
-            #     else:
-
-            #         return False, '$0'
 
     return True, f'${trip_price}'
 
