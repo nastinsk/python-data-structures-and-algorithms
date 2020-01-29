@@ -1,6 +1,6 @@
 import pytest
 
-from graph import Graph, Vertex
+from graph import Graph, Vertex, Queue
 
 def test_add_node():
 
@@ -178,6 +178,7 @@ def test_get_neighbors():
     assert neighbors[0][1] == 44
 
 def test_get_neighbors_no_neighbors():
+
     graph = Graph()
 
     banana = graph.add_node('banana')
@@ -186,6 +187,91 @@ def test_get_neighbors_no_neighbors():
 
     assert len(neighbors) == 0
     assert neighbors == []
+
+
+def test_breadth_first_empty_graph():
+
+    graph = Graph()
+
+    banana = Vertex("banana")
+    with pytest.raises(ValueError):
+        vertices_lst = graph.breadth_first(banana)
+
+
+def test_breadth_first_one_element():
+
+    graph = Graph()
+
+    banana = graph.add_node('banana')
+    vertices_lst = graph.breadth_first(banana)
+    assert vertices_lst == [banana]
+
+
+def test_breadth_first_regular():
+
+    graph = Graph()
+
+    banana = graph.add_node('banana')
+    vertices_lst = graph.breadth_first(banana)
+
+    apple = graph.add_node('apple')
+    graph.add_edge(banana, apple)
+
+    vertices_lst = graph.breadth_first(banana)
+
+    assert vertices_lst == [banana, apple]
+
+def test_breadth_first_regular2():
+    graph = Graph()
+
+    banana = graph.add_node('banana')
+
+    apple = graph.add_node('apple')
+
+    strawberry = graph.add_node('strawberry')
+    graph.add_edge(banana, apple)
+
+    graph.add_edge(strawberry, banana)
+
+    vertices_lst = graph.breadth_first(strawberry)
+    assert vertices_lst == [strawberry, banana, apple]
+
+def test_breadth_first_different_start_node():
+
+    graph = Graph()
+
+    banana = graph.add_node('banana')
+
+    apple = graph.add_node('apple')
+
+    strawberry = graph.add_node('strawberry')
+
+    graph.add_edge(banana, apple)
+
+    graph.add_edge(strawberry, banana)
+
+    vertices_lst = graph.breadth_first(banana)
+
+    assert vertices_lst == [banana, apple]
+
+def test_breadth_firts_islands_nodes():
+    graph = Graph()
+
+    banana = graph.add_node('banana')
+
+    apple = graph.add_node('apple')
+
+    strawberry = graph.add_node('strawberry')
+
+    graph.add_edge(banana, apple)
+
+    vertices_lst = graph.breadth_first(banana)
+
+    assert vertices_lst == [banana, apple]
+
+    vertices_lst = graph.breadth_first(apple)
+
+    assert vertices_lst == [apple]
 
 
 

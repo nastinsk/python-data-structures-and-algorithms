@@ -1,3 +1,5 @@
+from stacks_and_queues import Queue, Node
+
 class Graph:
     """Class to implement Graph object with the given methods"""
 
@@ -55,8 +57,36 @@ class Graph:
 
         return self._adjacency_list[vertex]
 
+    def breadth_first(self, starting_vertex):
+        """
+        Method to do breadth-first traversal on a graph.
+        Input: startin vertex
+        Output: list of vertices in the breadth-first order
+        """
+        vertices = []
+        breadth = Queue()
+
+        if starting_vertex not in self._adjacency_list:
+            raise ValueError
+        
+        breadth.enqueue(starting_vertex)
+
+        while not breadth.is_empty():
+            front = breadth.dequeue()
+            vertices.append(front)
+
+            for neighbor in self.get_neighbors(front):
+                if not neighbor[0].visited:
+                    neighbor[0].visited = True
+                    breadth.enqueue(neighbor[0])
+
+        return vertices
+
+
 
 class Vertex:
     """Class to create Vertex with the given value"""
     def __init__(self, value):
         self.value = value
+        self.visited = False
+        self.next = None
