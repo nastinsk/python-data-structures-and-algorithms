@@ -68,7 +68,7 @@ class Graph:
 
         if starting_vertex not in self._adjacency_list:
             raise ValueError
-        
+
         breadth.enqueue(starting_vertex)
 
         while not breadth.is_empty():
@@ -79,6 +79,9 @@ class Graph:
                 if not neighbor[0].visited:
                     neighbor[0].visited = True
                     breadth.enqueue(neighbor[0])
+
+        for node in self._adjacency_list:
+            node.visited = False
 
         return vertices
 
