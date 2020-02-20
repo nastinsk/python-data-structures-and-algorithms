@@ -11,3 +11,9 @@ def test_one_el_in_lst():
 
 def test_one_el_in_lst():
     assert two_sum([1,1,1,1], 2) == [0,1]
+
+def test_two_el_equal():
+    assert two_sum([2,2], 4) == [0,1]
+
+def test_two_el_not_target():
+    assert two_sum([2,4], 4) == []

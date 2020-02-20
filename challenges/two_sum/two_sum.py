@@ -17,14 +17,15 @@ def two_sum(lst, target):
 
         second_val = target - lst[i]
 
-        if second_val in nums_dict:
+        if second_val in nums_dict and second_val != target:
 
             results_arr.append(i)
-
 
             results_arr.append(nums_dict[second_val][0])
 
             return results_arr
+        
+
 
     return results_arr
 
